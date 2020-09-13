@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.dumbdogdiner'
+version = '1.0.0'
+
+configurations {
+    jaxDoclet
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+
+    maven {
+        url 'https://papermc.io/repo/repository/maven-public/'
+    }
+}
+
+dependencies {
+     compileOnly 'com.destroystokyo.paper:paper-api:1.16.3-R0.1-SNAPSHOT'
+}
+
+javadoc {
+    source = sourceSets.main.allJava
+    classpath = configurations.compile
+    destinationDir = reporting.file("./docs")
+}
