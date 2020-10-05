@@ -16,7 +16,6 @@ Current suggested features include:
 
 - Better/unified way to handle SQL connections/queries
 - Custom config handler
-- Custom player objects with "user" pool, initialization of player object is handled by api/core plugin and NOT by each individual plugin
 - Send messages with custom placeholder manager
 - Async commands
 
@@ -28,6 +27,7 @@ Current suggested features include:
 ### Important Links
 
 - [Trello](https://trello.com/c/kx7Ppznd/13-progress-checklist)
+- [Javadoc Guidelines](https://google.github.io/styleguide/javaguide.html#s7-javadoc)
 
 ## Contributing
 
